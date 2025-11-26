@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrar Productos</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="page-container">
+  <header>
+    <h1>Administrar Productos</h1>
+    <p>Crear, editar y eliminar productos del menú</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Productos actuales</h2>
+    <div id="productos-lista" class="products-grid"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Agregar nuevo producto</h2>
+    <div class="products-grid">
+      <div class="card">
+        <h3>Nuevo producto</h3>
+        <input id="nuevo-nombre" placeholder="Nombre del producto">
+        <input id="nuevo-precio" type="number" min="0" step="1" placeholder="Precio">
+        <button onclick="agregarProducto()">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <a href="index.html" class="btn">Volver</a>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/productos_admin.js"></script>
+</body>
+</html>

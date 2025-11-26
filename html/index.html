@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarApp Tampico</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="page-container">
+  <header>
+    <h1>BarApp-System</h1>
+    <p>Sistema de pedidos, inventario y catálogo</p>
+    <div id="user-info" class="user-info"></div>
+  </header>
+
+  <section id="public-home">
+    <div class="products-grid">
+      <div class="card">
+        <h3>Inicio de sesión</h3>
+        <p>Mesero / Administrador</p>
+        <input id="user" placeholder="Usuario">
+        <input id="pass" type="password" placeholder="Contraseña">
+        <button onclick="login()">Iniciar sesión</button>
+      </div>
+      <div class="card qr-card">
+        <h3>Catálogo para clientes</h3>
+        <p> <br> Da click aqui: <br></p>
+        <p><a href="productos.html" class="btn" >Catalogo de bebidas </a> </p>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="app-home">
+    <main>
+      <a href="carta.html" class="btn">Carta Digital</a>
+      <a href="mesas.html" class="btn" id="mesas-btn">Control de Mesas</a>
+      <a href="inventario.html" class="btn" id="admin-btn">Inventario (Admin)</a>
+      <a href="reportes.html" class="btn" id="reportes-btn">Reportes</a>
+      <a href="qr.html" class="btn" id="qr-btn">QR por Mesa</a>
+      <a href="#" class="btn" onclick="logout()">Cerrar Sesión</a>
+    </main>
+  </section>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/qr.js"></script>
+
+</body>
+</html>

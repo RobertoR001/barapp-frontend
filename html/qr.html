@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Códigos QR por mesa</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>QR por Mesa</h1>
+    <button type="button" class="qr-back-btn" onclick="window.history.back()">← Volver</button>
+  </header>
+
+  <main class="main-container qr-page">
+
+    <!-- NOTA IMPORTANTE:
+         AQUÍ YA NO EXISTE "card-grid", solo qr-layout
+         para que no fuerce el layout en 1 columna -->
+    <section class="qr-layout">
+
+      <!-- Tarjeta de configuración -->
+      <div class="card" id="qr-config">
+        <h2>Configuración de URL base</h2>
+        <p>
+          Esta URL se usará para generar los QR del modo cliente.<br />
+          Normalmente debe apuntar a <strong>cliente.html</strong> en tu servidor.
+        </p>
+
+        <input
+          type="text"
+          id="base-url"
+          placeholder="http://tu-servidor/cliente.html"
+        />
+
+        <p class="qr-help">
+          Puedes cambiarla y se actualizarán todos los QR.
+        </p>
+      </div>
+
+      <!-- CONTENEDOR FLEX que llenará qr.js -->
+      <div id="qr-mesas"></div>
+
+    </section>
+  </main>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/qr.js"></script>
+</body>
+</html>

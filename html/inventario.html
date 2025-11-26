@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="inventario-page">
+<div class="page-container">
+  <header><h1>Inventario</h1></header>
+
+  <section>
+    <h2 class="section-title">Inventario actual</h2>
+    <div id="inventario-container" class="products-grid"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Agregar producto</h2>
+    <div class="products-grid">
+      <div class="card">
+        <h3>Nuevo producto</h3>
+        <input id="nuevo-nombre" placeholder="Nombre del producto">
+        <input id="nuevo-precio" type="number" min="0" step="1" placeholder="Precio">
+        <button type="button" onclick="agregarProducto()">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Historial de movimientos</h2>
+    
+    <div id="historial-container" class="historial-list"></div>
+  </section>
+
+  
+  <div class="historial-actions">
+      <button type="button" class="btn" id="btn-exportar-historial">Exportar a Excel</button>
+      <a href="index.html" class="btn">Volver</a>
+    </div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/inventario.js"></script>
+</body>
+</html>

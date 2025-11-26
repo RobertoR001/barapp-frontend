@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="page-container">
+  <header><h1>Reportes de Ventas</h1></header>
+
+  <section>
+    <h2 class="section-title">Por mesa</h2>
+    <div id="reporte-mesas"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Por producto</h2>
+    <div id="reporte-productos"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Por usuario</h2>
+    <div id="reporte-usuarios"></div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Detalle de ventas (producto / quién / cuándo)</h2>
+    
+    <div id="reporte-detalle" class="historial-list"></div>
+    
+    <div class="historial-actions">
+      <button type="button" class="btn" id="btn-exportar-ventas">Exportar a Excel</button>
+      <a href="index.html" class="btn">Volver</a>
+    </div>
+  </section>
+
+  
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/reportes.js"></script>
+</body>
+</html>

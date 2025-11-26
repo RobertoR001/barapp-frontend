@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Mesas</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="mesas-page"> 
+<div class="page-container">
+  <header>
+    <h1>Control de Mesas</h1>
+  </header>
+  <div class="products-grid" id="mesas-container"></div>
+  <div id="pedido-section" class="pedido-section">
+    <h2 class="mesa-label">Mesa <span id="mesa-title"></span></h2>
+    <div id="order-list" class="products-grid"></div>
+    <h3 class="total" id="total">Total: $0</h3>
+    <button class="btn" onclick="cerrarCuenta()">Cerrar Cuenta</button>
+  </div>
+  <a href="index.html" class="btn">Volver</a>
+</div>
+<script src="../js/common.js"></script>
+<script src="../js/mesas.js"></script>
+</body>
+</html>
